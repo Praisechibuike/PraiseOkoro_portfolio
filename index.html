@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Praise Okoro - Aspiring Full-Stack Developer"
+    />
+    <title>Praise Okoro | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- =============================================
+         NAVIGATION BAR
+    ============================================= -->
+    <header id="home">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-logo">
+          <a href="#home" class="logo-link">Goalden<span class="logo-dot">.</span></a>
+        </div>
+
+        <!-- Hamburger icon (mobile) -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Nav links -->
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =============================================
+           HERO SECTION
+      ============================================= -->
+      <section class="hero" aria-label="Hero introduction">
+        <!-- Decorative background shapes -->
+        <div class="hero-bg-shape hero-bg-shape--1" aria-hidden="true"></div>
+        <div class="hero-bg-shape hero-bg-shape--2" aria-hidden="true"></div>
+        <div class="hero-bg-shape hero-bg-shape--3" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <!-- Text side -->
+          <div class="hero-text">
+            <p class="hero-greeting">Hello, I am</p>
+            <h1 class="hero-name">Praise <span class="accent">Okoro</span></h1>
+            <p class="hero-tagline">Aspiring Full-Stack Developer</p>
+            <p class="hero-description">
+              I craft beautiful, responsive websites and am on a journey to
+              becoming a professional web developer. Currently learning HTML,
+              CSS, and JavaScript.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn--primary">View My Work</a>
+              <a href="#contact" class="btn btn--outline">Get In Touch</a>
+            </div>
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator" aria-hidden="true">
+              <span class="scroll-line"></span>
+              <span class="scroll-text">Scroll</span>
+            </div>
+          </div>
+
+          <!-- Image side -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-frame">
+            
+              <img
+                src="/praise_portfolio/images/profile.jpg"
+                alt="Praise Okoro - Aspiring Full-Stack Developer profile photo"
+                class="hero-image"
+              />
+              <div class="hero-image-border" aria-hidden="true"></div>
+            </div>
+            <!-- Floating badge -->
+            <div class="hero-badge" aria-label="Status: Open to opportunities">
+              <span class="badge-dot"></span>
+              <span>Open to Opportunities</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================
+           ABOUT ME SECTION
+      ============================================= -->
+      <section id="about" class="about section" aria-label="About me">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Get to know me</span>
+            <h2 class="section-title">Who I Am</h2>
+            <div class="title-underline" aria-hidden="true"></div>
+          </div>
+
+          <div class="about-grid">
+            <!-- Image -->
+            <div class="about-image-wrapper">
+            
+              <img
+                src="/praise_portfolio/images/project1.jpg"
+                alt="Praise Okoro representing a brand, casual photo"
+                class="about-image"
+              />
+              <!-- Experience badge -->
+              <div class="about-badge">
+                <strong class="badge-number">5</strong>
+                <span class="badge-label">Months of Building</span>
+              </div>
+            </div>
+
+            <!-- Text -->
+            <div class="about-text">
+              <p class="about-paragraph">
+                Hi there! I am Praise Okoro, a passionate and driven web
+                development student currently enrolled in a web development
+                bootcamp. I have always been fascinated by the intersection of
+                creativity and technology, and web development perfectly bridges
+                that gap for me.
+              </p>
+              <p class="about-paragraph">
+               Before discovering my passion for coding, I built my foundation in project management, where I developed strong skills in organization, problem-solving, and delivering results. Now, I’m channeling that structured mindset into building websites that are not only functional but thoughtfully designed and user-friendly. In my free time, I enjoy making music, exploring creativity through sound, and experimenting with new ideas.
+              </p>
+              <p class="about-paragraph">
+                I am learning web development because I want to build products
+                that make a real difference in people's lives. My goal is to
+                become a full-stack developer who can take an idea from concept
+                to a fully deployed application. Every line of code I write
+                brings me one step closer to that goal.
+              </p>
+
+              <!-- Personal facts -->
+              <ul class="about-facts" role="list">
+                <li class="about-fact">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  <span>Based in Enugu, Nigeria</span>
+                </li>
+                <li class="about-fact">
+                  <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                  <span>Web Development Bootcamp Student</span>
+                </li>
+                <li class="about-fact">
+                  <i class="fa-solid fa-language" aria-hidden="true"></i>
+                  <span>English, Igbo, Pidgin</span>
+                </li>
+              </ul>
+
+              <a href="#contact" class="btn btn--primary">Let's Talk</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================
+           SKILLS SECTION
+      ============================================= -->
+      <section id="skills" class="skills section section--dark" aria-label="My skills">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">What I work with</span>
+            <h2 class="section-title">My Skills</h2>
+            <div class="title-underline" aria-hidden="true"></div>
+          </div>
+
+          <!-- Skills grid -->
+          <div class="skills-grid" role="list">
+
+            <!-- Skill cards: icon + name -->
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="devicon-html5-plain colored"></i>
+              </div>
+              <h3 class="skill-name">HTML5</h3>
+              <p class="skill-desc">Semantic markup and accessibility best practices</p>
+            </article>
+
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="devicon-css3-plain colored"></i>
+              </div>
+              <h3 class="skill-name">CSS3</h3>
+              <p class="skill-desc">Styling, animations, and visual design</p>
+            </article>
+
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+              <h3 class="skill-name">JavaScript</h3>
+              <p class="skill-desc">Interactive and dynamic web experiences</p>
+            </article>
+
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="fa-brands fa-css3" aria-hidden="true" style="color:#38bdf8;"></i>
+              </div>
+              <h3 class="skill-name">Flexbox</h3>
+              <p class="skill-desc">Modern one-dimensional CSS layouts</p>
+            </article>
+
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="fa-solid fa-table-cells" style="color:#a78bfa;"></i>
+              </div>
+              <h3 class="skill-name">CSS Grid</h3>
+              <p class="skill-desc">Powerful two-dimensional layout system</p>
+            </article>
+
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="devicon-git-plain colored"></i>
+              </div>
+              <h3 class="skill-name">Git</h3>
+              <p class="skill-desc">Version control and code management</p>
+            </article>
+
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="devicon-github-original"></i>
+              </div>
+              <h3 class="skill-name">GitHub</h3>
+              <p class="skill-desc">Remote repositories and collaboration</p>
+            </article>
+
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="devicon-vscode-plain colored"></i>
+              </div>
+              <h3 class="skill-name">VS Code</h3>
+              <p class="skill-desc">Primary development environment and editor</p>
+            </article>
+
+            <article class="skill-card" role="listitem">
+              <div class="skill-icon" aria-hidden="true">
+                <i class="fa-brands fa-chrome" style="color:#facc15;"></i>
+              </div>
+              <h3 class="skill-name">DevTools</h3>
+              <p class="skill-desc">Debugging, testing, and performance checks</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================
+           PROJECTS SECTION
+      ============================================= -->
+      <section id="projects" class="projects section" aria-label="My projects">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">My work</span>
+            <h2 class="section-title">What I've Built</h2>
+            <div class="title-underline" aria-hidden="true"></div>
+          </div>
+
+          <!-- Projects grid -->
+          <div class="projects-grid">
+
+            <!-- Project card 1 -->
+            <article class="project-card">
+              
+              <div class="project-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop"
+                  alt="Travel Agency website screenshot showing destinations and booking page"
+                  class="project-image"
+                />
+                <div class="project-overlay" aria-hidden="true">
+                  <div class="project-overlay-content">
+                    <a href="#" class="project-link-icon" aria-label="Live demo - Travel Agency">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="#" class="project-link-icon" aria-label="GitHub - Travel Agency">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-status project-status--soon">Coming Soon</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Travel Agency Website</h3>
+                <p class="project-description">
+                  A fully responsive travel agency landing page featuring destination
+                  galleries, booking inquiry forms, and an interactive itinerary
+                  planner. Designed to inspire wanderlust at every scroll.
+                </p>
+                <ul class="project-tags" role="list">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">CSS3</li>
+                  <li class="tag">Flexbox</li>
+                  <li class="tag">Grid</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project card 2 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop"
+                  alt="Restaurant website screenshot with menu and reservation section"
+                  class="project-image"
+                />
+                <div class="project-overlay" aria-hidden="true">
+                  <div class="project-overlay-content">
+                    <a href="#" class="project-link-icon" aria-label="Live demo - Restaurant site">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="#" class="project-link-icon" aria-label="GitHub - Restaurant site">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-status project-status--progress">In Progress</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Restaurant Website</h3>
+                <p class="project-description">
+                  An elegant restaurant website with an interactive menu, online
+                  reservation form, photo gallery of dishes, and a chef's story
+                  section. Built with semantic HTML and pure CSS animations.
+                </p>
+                <ul class="project-tags" role="list">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">CSS3</li>
+                  <li class="tag">Animations</li>
+                  <li class="tag">Forms</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project card 3 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+                  alt="E-commerce store website screenshot with product listings"
+                  class="project-image"
+                />
+                <div class="project-overlay" aria-hidden="true">
+                  <div class="project-overlay-content">
+                    <a href="#" class="project-link-icon" aria-label="Live demo - E-commerce store">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="#" class="project-link-icon" aria-label="GitHub - E-commerce store">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-status project-status--upcoming">Upcoming</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">E-commerce Store</h3>
+                <p class="project-description">
+                  A fully featured online shop with product grids, filtering by
+                  category, a shopping cart UI, and a checkout flow. Focused on
+                  accessibility, speed, and a clean user experience.
+                </p>
+                <ul class="project-tags" role="list">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">CSS Grid</li>
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">UI/UX</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project card 4 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop"
+                  alt="Developer portfolio website screenshot"
+                  class="project-image"
+                />
+                <div class="project-overlay" aria-hidden="true">
+                  <div class="project-overlay-content">
+                    <a href="#" class="project-link-icon" aria-label="Live demo - Portfolio">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="#" class="project-link-icon" aria-label="GitHub - Portfolio">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-status project-status--progress">In Progress</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">This Portfolio</h3>
+                <p class="project-description">
+                  You're looking at it! A handcrafted single-page portfolio built
+                  from scratch using only HTML5 and CSS3. Responsive across all
+                  devices, with smooth navigation and elegant design.
+                </p>
+                <ul class="project-tags" role="list">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">CSS3</li>
+                  <li class="tag">Responsive</li>
+                  <li class="tag">Google Fonts</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================
+           CONTACT SECTION
+      ============================================= -->
+      <section id="contact" class="contact section section--dark" aria-label="Contact me">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Say hello</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-underline" aria-hidden="true"></div>
+            <p class="section-subtitle">
+              Have a project in mind or just want to chat? I would love to hear
+              from you. Let's build something great together!
+            </p>
+          </div>
+
+          <div class="contact-grid">
+
+            <!-- Contact form -->
+            <div class="contact-form-wrapper">
+              <form class="contact-form" action="#" method="post" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="John Doe"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="john@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    class="form-input"
+                    placeholder="What's this about?"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-input form-textarea"
+                    placeholder="Tell me about your project or just say hi..."
+                    rows="6"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact info -->
+            <div class="contact-info">
+              <div class="contact-info-block">
+                <h3 class="contact-info-title">Contact Details</h3>
+
+                <a href="mailto:alex@example.com" class="contact-detail">
+                  <div class="contact-detail-icon" aria-hidden="true">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span class="contact-detail-label">Email</span>
+                    <span class="contact-detail-value">praisechibuikeokoro@gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="tel:+14155550199" class="contact-detail">
+                  <div class="contact-detail-icon" aria-hidden="true">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <span class="contact-detail-label">Phone</span>
+                    <span class="contact-detail-value">+234 913 022 7985</span>
+                  </div>
+                </a>
+
+                <div class="contact-detail">
+                  <div class="contact-detail-icon" aria-hidden="true">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <span class="contact-detail-label">Location</span>
+                    <span class="contact-detail-value">Enugu, Nigeria</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social links -->
+              <div class="contact-social-block">
+                <h3 class="contact-info-title">Find Me Online</h3>
+                <div class="social-links" role="list">
+                  <a
+                    href="https://github.com/Praisechibuike"
+                    class="social-link"
+                    role="listitem"
+                    aria-label="GitHub profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/praise-okoro-5663142b8/"
+                    class="social-link"
+                    role="listitem"
+                    aria-label="LinkedIn profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://x.com/home"
+                    class="social-link"
+                    role="listitem"
+                    aria-label="Twitter profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                    <span>Twitter / X</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="social-link"
+                    role="listitem"
+                    aria-label="Instagram profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-logo">Goalden<span class="accent">.</span></p>
+          <p class="footer-copy">
+            &copy; 2025 Praise Okoro. All rights reserved.
+          </p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="GitHub" class="footer-social-link">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="footer-social-link">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="Twitter" class="footer-social-link">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // ---- Hamburger menu toggle ----
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", function () {
+        const isOpen = navLinks.classList.toggle("nav-links--open");
+        hamburger.classList.toggle("hamburger--open");
+        hamburger.setAttribute("aria-expanded", isOpen.toString());
+      });
+
+      // Close menu when a nav link is clicked (mobile)
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("nav-links--open");
+          hamburger.classList.remove("hamburger--open");
+          hamburger.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      // ---- Active nav link on scroll ----
+      const sections = document.querySelectorAll("section[id], header[id]");
+      const navItems = document.querySelectorAll(".nav-link");
+
+      const observerOptions = {
+        root: null,
+        rootMargin: "-40% 0px -40% 0px",
+        threshold: 0,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            navItems.forEach((item) => {
+              item.classList.toggle(
+                "active",
+                item.getAttribute("href") === `#${entry.target.id}`
+              );
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach((sec) => observer.observe(sec));
+
+      // ---- Navbar shadow on scroll ----
+      const navbar = document.querySelector(".navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("navbar--scrolled", window.scrollY > 30);
+      });
+    </script>
+  </body>
+</html>
